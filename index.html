@@ -10,30 +10,32 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="main-container">
-        <div class="display">
-            <output class="user-input" type="text" id="user-input">0</output>	
-            <output class="result" type="text" id="result">&nbsp;</output>	
-        </div>
+    <div class="calculator-container">
+        <input type="text" class="calculator-screen" value="0" disabled />	
         <div class="all-btns">
-            <button class="btn span-2" id="all-clear-btn">AC</button>
-            <button class="btn span-2" id="clear-btn">C</button>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn">÷</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">×</button>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">−</button>
-            <button class="btn">.</button>
-            <button class="btn">0</button>
-            <button class="btn">=</button>
-            <button class="btn">+</button>
+            <button type="button" class="btn span-2" id="all-clear-btn">AC</button>
+            <button type="button" class="btn span-2" id="clear-btn">C</button>
+
+            <button type="button" class="btn">7</button>
+            <button type="button" class="btn">8</button>
+            <button type="button" class="btn">9</button>
+            <button type="button" class="btn operator">&divide;</button>
+
+            <button type="button" class="btn">4</button>
+            <button type="button" class="btn">5</button>
+            <button type="button" class="btn">6</button>
+            <button type="button" class="btn operator">&times;</button>
+
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">2</button>
+            <button type="button" class="btn">3</button>
+            <button type="button" class="btn operator">−</button>
+
+            <button type="button" class="btn" id="decimal">.</button>
+            <button type="button" class="btn">0</button>
+            <button type="button" class="btn">=</button>
+            <button type="button" class="btn operator" id="addition">+</button>
+
         </div>
     </div>
 </body>
